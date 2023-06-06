@@ -6,11 +6,13 @@ services:
     volumes:
       - './main.py:/usr/src/app/main.py'
     environment:
-      - ACCESS_TOKEN
-      - REFRESH_TOKEN
-      - USER_ID
-      - COOKIE
-      - LATITUDE
-      - LONGITUDE
-      - ROOM_ID
-      - LOGIN
+      - ACCESS_TOKEN = os.environ["ACCESS_TOKEN"]
+      - REFRESH_TOKEN = os.environ["REFRESH_TOKEN"]
+      - USER_ID = os.environ["USER_ID"]
+      - COOKIE = os.environ["COOKIE"]
+      - LATITUDE = os.environ["LATITUDE"]
+      - LONGITUDE = os.environ["LONGITUDE"]
+      - MATRIX_USERNAME = os.environ["MATRIX_USERNAME"]
+      - MATRIX_PASSWORD = os.environ["MATRIX_PASSWORD"]
+      - MATRIX_URL = os.environ["MATRIX_URL"]
+      - MATRIX_ROOM_ID = os.environ["MATRIX_ROOM_ID"]
