@@ -44,7 +44,7 @@ if args.matrix:
 def build_message(stores):
     msg = ""
     for store in stores:
-        msg += store[0] + " - " + str(store[1])
+        msg += store[0] + " - " + str(store[1]) + "\n"
     return msg
 
 
