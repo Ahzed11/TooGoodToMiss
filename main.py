@@ -98,7 +98,7 @@ async def main():
                 if args.slack:
                     slackClient.chat_postMessage(
                         channel = SLACK_CHANNEL_NAME,
-                        text    = build_message(NOTHING_MESSAGE),
+                        text    = NOTHING_MESSAGE,
                     )
 
                 if args.matrix:
